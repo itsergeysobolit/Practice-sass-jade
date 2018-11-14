@@ -1,3 +1,5 @@
+include components/button/button
+
 doctype html
 html(lang='en')
 	head
@@ -5,7 +7,16 @@ html(lang='en')
 		meta(name='viewport', content='width=device-width, initial-scale=1.0')
 		meta(http-equiv='X-UA-Compatible', content='ie=edge')
 		title Document
+		link(href='https://fonts.googleapis.com/css?family=Roboto', rel='stylesheet')
 		link(rel='stylesheet', href='css/main.css')
 	body
-		h1 Practice with Pug and Sass
-		img(src='./img/picture.png', alt='')
+		+button({
+			label: "Button 1"
+		})
+		+button({
+			label: "Button 2"
+		})
+		+button({
+			label: "Button 3"
+		})
+		
