@@ -1,0 +1,20 @@
+/* Ripple effect */
+.button {
+  margin-left: 50px;
+  padding: 9px 49px 7px 49px;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background-position: center;
+  -webkit-transition: background 0.8s;
+  transition: background 0.8s; }
+  .button:hover {
+    background: #cccccc radial-gradient(circle, transparent 1%, #cccccc 1%) center/15000%; }
+  .button:active {
+    background-color: #7c7c7c;
+    background-size: 100%;
+    -webkit-transition: background 0s;
+    transition: background 0s; }

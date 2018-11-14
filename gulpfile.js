@@ -56,7 +56,7 @@ gulp.task('processHtml', function () {
   return gulp.src(htmlBlob)
     .pipe(gulp.src('src/*.pug'))
     .pipe(pug({
-      // Your options in here.
+      
     }))
     .pipe(gulp.dest(distDirectory));
 });
