@@ -1,2 +1,4 @@
 mixin button(args)
-    button.button= args.label
+    button(
+        class=args.classes
+    )= args.label

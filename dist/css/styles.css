@@ -1,13 +1,14 @@
 /* Ripple effect */
 .button {
-  margin-left: 50px;
-  padding: 9px 49px 7px 49px;
+  padding: 5px 7px 5px 7px;
   text-transform: uppercase;
   font-size: 16px;
-  color: #000;
+  color: rgba(0, 0, 0, 0.87);
   border: none;
   cursor: pointer;
   outline: none;
+  text-align: center;
+  background-color: #fff;
   background-position: center;
   -webkit-transition: background 0.8s;
   transition: background 0.8s; }
@@ -18,3 +19,37 @@
     background-size: 100%;
     -webkit-transition: background 0s;
     transition: background 0s; }
+  .button_colored {
+    color: #328afb; }
+  .button_view {
+    margin-left: 139px; }
+
+body * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.card {
+  width: 432px;
+  padding: 22px 8px 7px 25px;
+  margin-top: 20px;
+  font-family: 'Roboto', sans-serif;
+  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+          box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26); }
+  .card__description {
+    margin-top: 22px; }
+  .card .footer {
+    margin-top: 20px; }
+
+.footer {
+  border-top: 1px solid #dddddd;
+  padding-top: 6px;
+  padding-left: 15px;
+  margin-left: -25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }

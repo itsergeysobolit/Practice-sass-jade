@@ -1,11 +1,20 @@
 .button {
-    margin-left: 50px;
-    padding: 9px 49px 7px 49px;
+    padding: 5px 7px 5px 7px;
     text-transform: uppercase;
     font-size: 16px;
-    color: #000;
+    color: rgba(0, 0, 0, 0.87);
     border: none;
     cursor: pointer;
     outline: none;
+    text-align: center;
+    background-color: #fff;
     @include with-ripple(#cccccc, #7c7c7c);
+
+    &_colored {
+        color: #328afb;
+    }
+
+    &_view {
+        margin-left: 139px;
+    }
 }
