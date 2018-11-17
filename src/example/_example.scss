@@ -1,0 +1,29 @@
+.paper {
+    width: 149px;
+    height: 148px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: inline-block;
+}
+
+.paper-1 {
+    @include box-shadow-1;
+}
+
+.paper-2 {
+    @include box-shadow-2;
+}
+
+.paper-3 {
+    @include box-shadow-3;
+}
+
+.paper-4 {
+    @include box-shadow-4;
+}
+
+.paper-5 {
+    @include box-shadow-5;
+}

@@ -4,7 +4,7 @@
     transition: background 0.8s;
     
     &:hover {
-      background: #cccccc radial-gradient(circle, transparent 1%, $initial-color 1%) center/15000%;
+      background: $initial-color radial-gradient(circle, transparent 1%, $initial-color 1%) center/15000%;
     }
     
     &:active {
@@ -35,4 +35,12 @@
 
 @mixin box-shadow-5 {
   box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.24), 0 40px 77px 0 rgba(0, 0, 0, 0.19);
+}
+
+@mixin ellipsis ($max-width){
+  display: inline-block;
+  max-width: $max-width;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }

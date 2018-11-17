@@ -1,5 +1,3 @@
-include components/button/button
-
 doctype html
 html(lang='en')
 	head
@@ -11,33 +9,29 @@ html(lang='en')
 		link(rel='stylesheet', href='css/styles.css')
 
 	body
-		+button({
-			label: "button",
-			classes: "button button_colored"
-		})
-		+button({
-			label: "button",
-			classes: "button"
-		})
-		+button({
-			label: "button",
-			classes: "button"
-		})
-
 		.card
 			h2.card__title Card headline title
 			p.card__description.
 				Lorem ipsum dolor sit amet, doming noster at quo, nostrud lucilius rationibus ea duo. Vim no mucius dolores. No bonorum voluptatum vis, has iudicabit consectetuer ne. Nullam sensibus vim id, et quo graeci perpetua.
-			.footer
-				+button({
-					label: "more info...",
-					classes: "button"
-				})
-				+button({
-					label: "button",
-					classes: "button button_view"
-				})
-				+button({
-					label: "accept",
-					classes: "button button_colored"
-				})
+			.card__footer
+				button.button.button_narrow more info...
+				button.button.button_narrow.button_view button
+				button.button.button_narrow.button_colored accept
+
+		.card
+			p.card__description.
+				Cards are a convenient means of displaying content composed of different types of objects.
+			button.button.button_position Hurray!
+
+		.card
+			.card__header
+				h2.card__title.card__title_view Card with image header
+			p.card__description.card__description_view.
+				Lorem ipsum dolor sit amet, doming noster at quo, nostrud lucilius rationibus ea duo. Vim no mucius dolores. No bonorum voluptatum vis, has iudicabit consectetuer ne. Nullam sensibus vim id, et quo graeci perpetua.
+			.card__footer
+				button.button.button_narrow more info...
+				button.button.button_narrow.button_view button
+				button.button.button_narrow.button_colored accept
+
+		include example/example
+

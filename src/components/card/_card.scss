@@ -1,0 +1,39 @@
+.card {
+    width: 432px;
+    padding: 22px 8px 7px 25px;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+
+    &__header {
+        background-color: #03a9f4;
+        margin: -22px -8px -7px -25px;
+    }
+
+    &__title {
+        margin-bottom: 22px;
+        @include ellipsis(100%);
+
+        &_view {
+            padding: 134px 143px 18px 25px;
+            color: rgba(255, 255, 255, 0.87);
+        }
+    }
+
+    &__description {
+        &_view {
+            margin-top: 31px;
+        }
+    }
+
+    &__footer {
+        margin-top: 20px;
+        border-top: 1px solid #dddddd;
+        padding-top: 6px;
+        padding-left: 15px;
+        margin-left: -25px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @include box-shadow-1;
+}

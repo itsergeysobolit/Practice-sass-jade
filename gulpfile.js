@@ -11,7 +11,7 @@ const distDirectory = 'dist';
 const htmlBlob = 'src/**/*.pug';
 const imagesBlob = 'src/img/**';
 const fontsBlob = 'src/fonts/**';
-const stylesBlob = 'src/scss/**';
+const stylesBlob = 'src/**/*.scss';
 
 gulp.task('default', function () {
   return runSequence('build', 'serve');
@@ -53,8 +53,7 @@ gulp.task('cleanDist', function () {
 });
 
 gulp.task('processHtml', function () {
-  return gulp.src(htmlBlob)
-    .pipe(gulp.src('src/*.pug'))
+  return gulp.src('src/*.pug')
     .pipe(pug({
       
     }))
